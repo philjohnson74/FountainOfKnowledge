@@ -3,6 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fountain.Application", "Fountain.Application", "{F7C4494F-BBB1-4631-A4B8-E5CCF31C556F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fountain.Domain", "Fountain.Domain", "{50CACE04-1454-4071-ACBC-154F3291A1F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fountain.Infra.Data", "Fountain.Infra.Data", "{206FC994-4091-4DC8-8D17-41F95EE0C1F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fountain.Infra.IoC", "Fountain.Infra.IoC", "{ECC5A0A2-3FFD-425B-8CE3-EACE9525DABE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fountain.UI.Mvc", "Fountain.UI.Mvc", "{181E1C34-0C91-415A-BCEB-9173D33D91A5}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
