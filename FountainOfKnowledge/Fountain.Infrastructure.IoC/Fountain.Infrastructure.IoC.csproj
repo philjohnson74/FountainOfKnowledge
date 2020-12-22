@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Fountain.Application\Fountain.Application.csproj" />
+    <ProjectReference Include="..\Fountain.Infrastructure.Data\Fountain.Infrastructure.Data.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Fountain.Application.Interfaces
 {
-    interface IPenService
+    public interface IPenService
     {
         PenViewModel GetPens();
     }
