@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fountain.Domain", "Fountain
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fountain.Infrastructure.Data", "Fountain.Infrastructure.Data\Fountain.Infrastructure.Data.csproj", "{FF9E1D1B-E80C-4F4E-ADF2-45D3A203B8EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fountain.Application", "Fountain.Application\Fountain.Application.csproj", "{EC37122F-7122-41E0-A9E4-979E7DB697B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{FF9E1D1B-E80C-4F4E-ADF2-45D3A203B8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF9E1D1B-E80C-4F4E-ADF2-45D3A203B8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF9E1D1B-E80C-4F4E-ADF2-45D3A203B8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC37122F-7122-41E0-A9E4-979E7DB697B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC37122F-7122-41E0-A9E4-979E7DB697B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC37122F-7122-41E0-A9E4-979E7DB697B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC37122F-7122-41E0-A9E4-979E7DB697B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +51,7 @@ Global
 		{E59164EA-21CB-41C1-A756-E4B9BBA38B65} = {181E1C34-0C91-415A-BCEB-9173D33D91A5}
 		{4D4D8161-5A77-4B01-A7B4-7F535633700C} = {50CACE04-1454-4071-ACBC-154F3291A1F7}
 		{FF9E1D1B-E80C-4F4E-ADF2-45D3A203B8EF} = {206FC994-4091-4DC8-8D17-41F95EE0C1F6}
+		{EC37122F-7122-41E0-A9E4-979E7DB697B3} = {F7C4494F-BBB1-4631-A4B8-E5CCF31C556F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB491BFB-8CB4-4678-B9AB-B0C2DA437149}
