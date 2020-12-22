@@ -7,6 +7,6 @@ namespace Fountain.Application.Interfaces
 {
     interface IPenService
     {
-        IEnumerable<PenViewModel> GetPens();
+        PenViewModel GetPens();
     }
 }

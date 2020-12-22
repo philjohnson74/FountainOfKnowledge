@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Fountain.Domain.Interfaces
 {
-    interface IPenRepository
+    public interface IPenRepository
     {
         IEnumerable<Pen> GetPens();
     }
