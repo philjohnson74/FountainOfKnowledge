@@ -11,7 +11,7 @@ namespace Fountain.Application.Services
     {
         private IPenRepository _penRepository;
 
-        PenService(IPenRepository penRepository)
+        public PenService(IPenRepository penRepository)
         {
             _penRepository = penRepository;
         }
