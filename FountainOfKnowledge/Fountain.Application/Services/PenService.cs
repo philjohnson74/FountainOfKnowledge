@@ -21,7 +21,7 @@ namespace Fountain.Application.Services
             return new PenViewModel()
             {
                 Pens = _penRepository.GetPens()
-            }
+            };
         }
     }
 }
