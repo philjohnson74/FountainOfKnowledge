@@ -14,7 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Fountain.Infrastructure.Data\Fountain.Infrastructure.Data.csproj" />
     <ProjectReference Include="..\Fountain.Infrastructure.IoC\Fountain.Infrastructure.IoC.csproj" />
   </ItemGroup>
 

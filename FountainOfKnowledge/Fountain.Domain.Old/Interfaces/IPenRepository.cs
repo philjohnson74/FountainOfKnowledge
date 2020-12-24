@@ -8,6 +8,5 @@ namespace Fountain.Domain.Interfaces
     public interface IPenRepository
     {
         IEnumerable<Pen> GetPens();
-        void Add(Pen pen);
     }
 }

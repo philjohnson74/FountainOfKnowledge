@@ -16,6 +16,12 @@ namespace Fountain.Infrastructure.Data.Repository
             _context = context;
         }
 
+        public void Add(Pen pen)
+        {
+            _context.Pens.Add(pen);
+            _context.SaveChanges();
+        }
+
         public IEnumerable<Pen> GetPens()
         {
             return _context.Pens;

@@ -1,16 +1,15 @@
-﻿using Fountain.Domain.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Fountain.Application.ViewModels
+namespace Fountain.Domain.Models
 {
-    public class PenViewModel
+    public class Pen
     {
+        public int Id { get; set; }
         public string Manufacturer { get; set; }
         public string Model { get; set; }
         public string Description { get; set; }
         public string ImageUrl { get; set; }
-        public IEnumerable<Pen> Pens { get; set; }
     }
 }

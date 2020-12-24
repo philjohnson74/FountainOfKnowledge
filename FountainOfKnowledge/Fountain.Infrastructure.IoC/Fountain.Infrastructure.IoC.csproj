@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Fountain.Application\Fountain.Application.csproj" />
+    <ProjectReference Include="..\Fountain.Infrastructure.Bus\Fountain.Infrastructure.Bus.csproj" />
     <ProjectReference Include="..\Fountain.Infrastructure.Data\Fountain.Infrastructure.Data.csproj" />
   </ItemGroup>
 
