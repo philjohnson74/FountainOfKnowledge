@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fountain.Domain.Core", "Fou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fountain.Domain", "Fountain.Domain\Fountain.Domain.csproj", "{FC13D56B-2EA3-4FDF-9529-D931D1C8F476}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fountain.API", "Fountain.API\Fountain.API.csproj", "{10377E33-9359-4948-96C6-B8C1899496E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{FC13D56B-2EA3-4FDF-9529-D931D1C8F476}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC13D56B-2EA3-4FDF-9529-D931D1C8F476}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC13D56B-2EA3-4FDF-9529-D931D1C8F476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10377E33-9359-4948-96C6-B8C1899496E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10377E33-9359-4948-96C6-B8C1899496E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10377E33-9359-4948-96C6-B8C1899496E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10377E33-9359-4948-96C6-B8C1899496E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +83,7 @@ Global
 		{E5A43892-202A-4104-B8E0-6E7C9E4AFB91} = {02B1798C-67FF-4167-8F03-B4E5AE7F3141}
 		{B70B42C1-6F39-41B1-98FC-C7C7CAE8BA71} = {50CACE04-1454-4071-ACBC-154F3291A1F7}
 		{FC13D56B-2EA3-4FDF-9529-D931D1C8F476} = {50CACE04-1454-4071-ACBC-154F3291A1F7}
+		{10377E33-9359-4948-96C6-B8C1899496E6} = {A810CE48-82F8-4A49-9C5A-66722F153BCE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB491BFB-8CB4-4678-B9AB-B0C2DA437149}
