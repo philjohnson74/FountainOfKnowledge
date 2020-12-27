@@ -1,5 +1,6 @@
 using Fountain.Infrastructure.Data.Context;
 using Fountain.Infrastructure.IoC;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -38,6 +39,8 @@ namespace Fountain.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Fountain.API", Version = "v1" });
             });
+
+            services.AddMediatR(typeof(Startup));
 
             RegisterServices(services);
         }

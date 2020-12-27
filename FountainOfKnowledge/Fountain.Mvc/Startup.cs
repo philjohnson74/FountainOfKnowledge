@@ -1,6 +1,7 @@
 using Fountain.Infrastructure.Data.Context;
 using Fountain.Infrastructure.IoC;
 using Fountain.Mvc.Data;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -41,6 +42,7 @@ namespace Fountain.Mvc
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
 
+            services.AddMediatR(typeof(Startup));
             RegisterServices(services);
         }
 
