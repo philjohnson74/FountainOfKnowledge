@@ -1,5 +1,6 @@
 using Fountain.Infrastructure.Data.Context;
 using Fountain.Infrastructure.IoC;
+using Fountain.Mvc.Configurations;
 using Fountain.Mvc.Data;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -43,6 +44,9 @@ namespace Fountain.Mvc
             services.AddControllersWithViews();
 
             services.AddMediatR(typeof(Startup));
+
+            services.RegisterAutoMapper();
+
             RegisterServices(services);
         }
 

@@ -1,3 +1,4 @@
+using Fountain.API.Configurations;
 using Fountain.Infrastructure.Data.Context;
 using Fountain.Infrastructure.IoC;
 using MediatR;
@@ -41,6 +42,8 @@ namespace Fountain.API
             });
 
             services.AddMediatR(typeof(Startup));
+
+            services.RegisterAutoMapper();
 
             RegisterServices(services);
         }

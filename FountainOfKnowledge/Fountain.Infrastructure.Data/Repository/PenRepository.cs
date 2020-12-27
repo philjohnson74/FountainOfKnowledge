@@ -3,6 +3,7 @@ using Fountain.Domain.Models;
 using Fountain.Infrastructure.Data.Context;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Fountain.Infrastructure.Data.Repository
@@ -22,7 +23,7 @@ namespace Fountain.Infrastructure.Data.Repository
             _context.SaveChanges();
         }
 
-        public IEnumerable<Pen> GetPens()
+        public IQueryable<Pen> GetPens()
         {
             return _context.Pens;
         }

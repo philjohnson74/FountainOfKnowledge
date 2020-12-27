@@ -11,6 +11,5 @@ namespace Fountain.Application.ViewModels
         public string Model { get; set; }
         public string Description { get; set; }
         public string ImageUrl { get; set; }
-        public IEnumerable<Pen> Pens { get; set; }
     }
 }

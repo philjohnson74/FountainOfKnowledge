@@ -1,4 +1,6 @@
-﻿using Fountain.Application.Interfaces;
+﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using Fountain.Application.Interfaces;
 using Fountain.Application.ViewModels;
 using Fountain.Domain.Commands;
 using Fountain.Domain.Core.Bus;
@@ -13,31 +15,23 @@ namespace Fountain.Application.Services
     {
         private readonly IPenRepository _penRepository;
         private readonly IMediatorHandler _bus;
+        private readonly IMapper _autoMapper;
 
-        public PenService(IPenRepository penRepository, IMediatorHandler bus)
+        public PenService(IPenRepository penRepository, IMediatorHandler bus, IMapper autoMapper)
         {
             _penRepository = penRepository;
             _bus = bus;
+            _autoMapper = autoMapper;
         }
 
         public void Create(PenViewModel penViewModel)
         {
-            var createPenCommand = new CreatePenCommand(
-                    penViewModel.Manufacturer,
-                    penViewModel.Model,
-                    penViewModel.Description,
-                    penViewModel.ImageUrl
-                );
-
-            _bus.SendCommand(createPenCommand);
+            _bus.SendCommand(_autoMapper.Map<CreatePenCommand>(penViewModel));
         }
 
-        public PenViewModel GetPens()
+        public IEnumerable<PenViewModel> GetPens()
         {
-            return new PenViewModel()
-            {
-                Pens = _penRepository.GetPens()
-            };
+            return _penRepository.GetPens().ProjectTo<PenViewModel>(_autoMapper.ConfigurationProvider);
         }
     }
 }

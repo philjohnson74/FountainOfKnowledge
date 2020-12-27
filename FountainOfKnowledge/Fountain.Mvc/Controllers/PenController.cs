@@ -21,8 +21,7 @@ namespace Fountain.Mvc.Controllers
 
         public IActionResult Index()
         {
-            PenViewModel model = _penService.GetPens();
-            return View(model);
+            return View(_penService.GetPens());
         }
     }
 }

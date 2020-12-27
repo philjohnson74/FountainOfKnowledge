@@ -1,8 +1,8 @@
-﻿@model Fountain.Application.ViewModels.PenViewModel
+﻿@model IEnumerable<Fountain.Application.ViewModels.PenViewModel>
 
 <div class="container body-content">
     <div class="row pen-content">
-        @foreach(var pen in Model.Pens)
+        @foreach(var pen in Model)
         {
             <div class="pen-image-container">
                 <div class="pen-image" style="background-image:url(@pen.ImageUrl)"></div>
