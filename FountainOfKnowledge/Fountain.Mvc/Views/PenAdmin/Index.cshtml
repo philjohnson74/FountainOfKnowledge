@@ -8,6 +8,7 @@
                 <div class="pen-image" style="background-image:url(@pen.ImageUrl)"></div>
             </div>
             <p>@pen.Manufacturer</p>
+            <a asp-controller="PenAdmin" asp-action="Pen" asp-route-id="@pen.Id">Edit</a>
         }
     </div>
 </div>

@@ -1,0 +1,13 @@
+﻿@model Fountain.Application.ViewModels.PenViewModel
+
+<div class="container body-content">
+    <div class="row pen-content">
+        <div class="pen-image-container">
+            <div class="pen-image" style="background-image:url(@Model.ImageUrl)"></div>
+        </div>
+
+        <p>Manufacturer: @Model.Manufacturer</p>
+        <p>Model: @Model.Model</p>
+        <p>Description: @Model.Description</p>
+    </div>
+</div>

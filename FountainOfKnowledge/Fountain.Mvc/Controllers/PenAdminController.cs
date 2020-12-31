@@ -9,11 +9,12 @@ using System.Threading.Tasks;
 
 namespace Fountain.Mvc.Controllers
 {
-    public class PenController : Controller
+    [Authorize]
+    public class PenAdminController : Controller
     {
         private IPenService _penService;
 
-        public PenController(IPenService penService)
+        public PenAdminController(IPenService penService)
         {
             _penService = penService;
         }
@@ -21,6 +22,21 @@ namespace Fountain.Mvc.Controllers
         public IActionResult Index()
         {
             return View(_penService.GetPens());
+        }
+
+        public async Task<IActionResult> Pen(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var pen = await _penService.GetPenAsync(id.GetValueOrDefault());
+            if (pen == null)
+            {
+                return NotFound();
+            }
+            return View(pen);
         }
     }
 }

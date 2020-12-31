@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Fountain.Infrastructure.Data.Repository
 {
@@ -21,6 +22,16 @@ namespace Fountain.Infrastructure.Data.Repository
         {
             _context.Pens.Add(pen);
             _context.SaveChanges();
+        }
+
+        public Pen GetPen(int id)
+        {
+            return _context.Pens.Find(id);
+        }
+
+        public async Task<Pen> GetPenAsync(int id)
+        {
+            return await _context.Pens.FindAsync(id);
         }
 
         public IQueryable<Pen> GetPens()

@@ -7,6 +7,7 @@ namespace Fountain.Application.ViewModels
 {
     public class PenViewModel
     {
+        public int Id { get; set; }
         public string Manufacturer { get; set; }
         public string Model { get; set; }
         public string Description { get; set; }

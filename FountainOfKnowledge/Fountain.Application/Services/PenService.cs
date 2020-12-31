@@ -8,6 +8,7 @@ using Fountain.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Fountain.Application.Services
 {
@@ -27,6 +28,18 @@ namespace Fountain.Application.Services
         public void Create(PenViewModel penViewModel)
         {
             _bus.SendCommand(_autoMapper.Map<CreatePenCommand>(penViewModel));
+        }
+
+        public PenViewModel GetPen(int id)
+        {
+            var pen = _penRepository.GetPen(id);
+            return _autoMapper.Map<PenViewModel>(pen);
+        }
+
+        public async Task<PenViewModel> GetPenAsync(int id)
+        {
+            var pen = await _penRepository.GetPenAsync(id);
+            return _autoMapper.Map<PenViewModel>(pen);
         }
 
         public IEnumerable<PenViewModel> GetPens()
