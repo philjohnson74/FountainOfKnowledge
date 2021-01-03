@@ -7,6 +7,7 @@ using Fountain.Domain.Core.Bus;
 using Fountain.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -30,6 +31,11 @@ namespace Fountain.Application.Services
             _bus.SendCommand(_autoMapper.Map<CreatePenCommand>(penViewModel));
         }
 
+        public void Update(PenViewModel penViewModel)
+        {
+            _bus.SendCommand(_autoMapper.Map<UpdatePenCommand>(penViewModel));
+        }
+
         public PenViewModel GetPen(int id)
         {
             var pen = _penRepository.GetPen(id);
@@ -45,6 +51,11 @@ namespace Fountain.Application.Services
         public IEnumerable<PenViewModel> GetPens()
         {
             return _penRepository.GetPens().ProjectTo<PenViewModel>(_autoMapper.ConfigurationProvider);
+        }
+
+        public IEnumerable<PenViewModel> GetPens(IPenServiceFilter filter)
+        {
+            return GetPens().Where(x => x.Manufacturer.Contains(filter.Manufacturer));
         }
     }
 }

@@ -10,10 +10,14 @@ namespace Fountain.Application.Interfaces
     {
         IEnumerable<PenViewModel> GetPens();
 
+        IEnumerable<PenViewModel> GetPens(IPenServiceFilter filter);
+
         PenViewModel GetPen(int id);
 
         Task<PenViewModel> GetPenAsync(int id);
 
         void Create(PenViewModel penViewModel);
+
+        void Update(PenViewModel penViewModel);
     }
 }

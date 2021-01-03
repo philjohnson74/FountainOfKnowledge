@@ -16,5 +16,7 @@ namespace Fountain.Domain.Interfaces
         Task<Pen> GetPenAsync(int id);
 
         void Add(Pen pen);
+
+        void Update(Pen pen);
     }
 }

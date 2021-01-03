@@ -21,6 +21,7 @@ namespace Fountain.Infrastructure.IoC
         {
             services.AddScoped<IMediatorHandler, InMemoryBus>();
             services.AddScoped<IRequestHandler<CreatePenCommand, bool>, PenCommandHandler>();
+            services.AddScoped<IRequestHandler<UpdatePenCommand, bool>, PenCommandHandler>();
             services.AddScoped<IPenService, PenService>();
             services.AddScoped<IPenRepository, PenRepository>();
             services.AddScoped<FountainDBContext>();

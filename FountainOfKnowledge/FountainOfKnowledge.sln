@@ -15,23 +15,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fountain.Mvc", "Fountain.Mvc\Fountain.Mvc.csproj", "{E59164EA-21CB-41C1-A756-E4B9BBA38B65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fountain.Infrastructure.Data", "Fountain.Infrastructure.Data\Fountain.Infrastructure.Data.csproj", "{FF9E1D1B-E80C-4F4E-ADF2-45D3A203B8EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fountain.Infrastructure.Data", "Fountain.Infrastructure.Data\Fountain.Infrastructure.Data.csproj", "{FF9E1D1B-E80C-4F4E-ADF2-45D3A203B8EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fountain.Application", "Fountain.Application\Fountain.Application.csproj", "{EC37122F-7122-41E0-A9E4-979E7DB697B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fountain.Application", "Fountain.Application\Fountain.Application.csproj", "{EC37122F-7122-41E0-A9E4-979E7DB697B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fountain.Infrastructure.IoC", "Fountain.Infrastructure.IoC\Fountain.Infrastructure.IoC.csproj", "{D25A2580-3268-4332-9DCE-83BC73BC09A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fountain.Infrastructure.IoC", "Fountain.Infrastructure.IoC\Fountain.Infrastructure.IoC.csproj", "{D25A2580-3268-4332-9DCE-83BC73BC09A3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure.Bus", "Infrastructure.Bus", "{02B1798C-67FF-4167-8F03-B4E5AE7F3141}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{A810CE48-82F8-4A49-9C5A-66722F153BCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fountain.Infrastructure.Bus", "Fountain.Infrastructure.Bus\Fountain.Infrastructure.Bus.csproj", "{E5A43892-202A-4104-B8E0-6E7C9E4AFB91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fountain.Infrastructure.Bus", "Fountain.Infrastructure.Bus\Fountain.Infrastructure.Bus.csproj", "{E5A43892-202A-4104-B8E0-6E7C9E4AFB91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fountain.Domain.Core", "Fountain.Domain.Core\Fountain.Domain.Core.csproj", "{B70B42C1-6F39-41B1-98FC-C7C7CAE8BA71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fountain.Domain.Core", "Fountain.Domain.Core\Fountain.Domain.Core.csproj", "{B70B42C1-6F39-41B1-98FC-C7C7CAE8BA71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fountain.Domain", "Fountain.Domain\Fountain.Domain.csproj", "{FC13D56B-2EA3-4FDF-9529-D931D1C8F476}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fountain.Domain", "Fountain.Domain\Fountain.Domain.csproj", "{FC13D56B-2EA3-4FDF-9529-D931D1C8F476}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fountain.API", "Fountain.API\Fountain.API.csproj", "{10377E33-9359-4948-96C6-B8C1899496E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fountain.API", "Fountain.API\Fountain.API.csproj", "{10377E33-9359-4948-96C6-B8C1899496E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{161120B9-E9BE-4CB0-AAB5-02EFDCEF7569}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application.Tests", "Application.Tests", "{DF2A31A2-ACD6-4933-BC37-F8F70F043F69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fountain.Application.Tests", "Fountain.Application.Tests\Fountain.Application.Tests.csproj", "{6E5A1190-10C6-47E6-9AB3-8BDAFFB75D58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +77,10 @@ Global
 		{10377E33-9359-4948-96C6-B8C1899496E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10377E33-9359-4948-96C6-B8C1899496E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10377E33-9359-4948-96C6-B8C1899496E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E5A1190-10C6-47E6-9AB3-8BDAFFB75D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E5A1190-10C6-47E6-9AB3-8BDAFFB75D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E5A1190-10C6-47E6-9AB3-8BDAFFB75D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E5A1190-10C6-47E6-9AB3-8BDAFFB75D58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +94,8 @@ Global
 		{B70B42C1-6F39-41B1-98FC-C7C7CAE8BA71} = {50CACE04-1454-4071-ACBC-154F3291A1F7}
 		{FC13D56B-2EA3-4FDF-9529-D931D1C8F476} = {50CACE04-1454-4071-ACBC-154F3291A1F7}
 		{10377E33-9359-4948-96C6-B8C1899496E6} = {A810CE48-82F8-4A49-9C5A-66722F153BCE}
+		{DF2A31A2-ACD6-4933-BC37-F8F70F043F69} = {161120B9-E9BE-4CB0-AAB5-02EFDCEF7569}
+		{6E5A1190-10C6-47E6-9AB3-8BDAFFB75D58} = {DF2A31A2-ACD6-4933-BC37-F8F70F043F69}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB491BFB-8CB4-4678-B9AB-B0C2DA437149}

@@ -1,13 +1,55 @@
 ﻿@model Fountain.Application.ViewModels.PenViewModel
 
-<div class="container body-content">
-    <div class="row pen-content">
-        <div class="pen-image-container">
-            <div class="pen-image" style="background-image:url(@Model.ImageUrl)"></div>
-        </div>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
 
-        <p>Manufacturer: @Model.Manufacturer</p>
-        <p>Model: @Model.Model</p>
-        <p>Description: @Model.Description</p>
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.Id)
+    <div class="container body-content">
+        <div class="row pen-content">
+            <h4>Student</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.Id)
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Manufacturer, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Manufacturer, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Manufacturer, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Model, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Model, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Model, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ImageUrl, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.ImageUrl, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Model, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Save" class="btn btn-default" />
+                </div>
+            </div>
+
+            <div class="pen-image-container">
+                <div class="pen-image" style="background-image:url(@Model.ImageUrl)"></div>
+            </div>
+
+            <p>Manufacturer: @Model.Manufacturer</p>
+            <p>Model: @Model.Model</p>
+            <p>Description: @Model.Description</p>
+        </div>
     </div>
-</div>
+}

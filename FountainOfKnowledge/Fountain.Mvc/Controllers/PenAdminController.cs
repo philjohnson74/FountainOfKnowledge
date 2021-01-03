@@ -38,5 +38,13 @@ namespace Fountain.Mvc.Controllers
             }
             return View(pen);
         }
+
+        [HttpPost]
+        public ActionResult Pen(PenViewModel penViewModel)
+        {
+            _penService.Update(penViewModel);
+
+            return RedirectToAction("Index");
+        }
     }
 }

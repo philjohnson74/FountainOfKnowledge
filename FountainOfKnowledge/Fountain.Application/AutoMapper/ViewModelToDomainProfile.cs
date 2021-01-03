@@ -13,6 +13,8 @@ namespace Fountain.Application.AutoMapper
         {
             CreateMap<PenViewModel, CreatePenCommand>()
                 .ConvertUsing(c => new CreatePenCommand(c.Manufacturer, c.Model, c.Description, c.ImageUrl));
+            CreateMap<PenViewModel, UpdatePenCommand>()
+                .ConvertUsing(c => new UpdatePenCommand(c.Id, c.Manufacturer, c.Model, c.Description, c.ImageUrl));
         }
     }
 }

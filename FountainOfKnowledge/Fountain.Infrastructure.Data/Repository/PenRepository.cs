@@ -24,6 +24,12 @@ namespace Fountain.Infrastructure.Data.Repository
             _context.SaveChanges();
         }
 
+        public void Update(Pen pen)
+        {
+            _context.Pens.Update(pen);
+            _context.SaveChanges();
+        }
+
         public Pen GetPen(int id)
         {
             return _context.Pens.Find(id);

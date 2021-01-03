@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Fountain.Domain.CommandHandlers
 {
-    public class PenCommandHandler : IRequestHandler<CreatePenCommand, bool>
+    public class PenCommandHandler : IRequestHandler<CreatePenCommand, bool>, IRequestHandler<UpdatePenCommand, bool>
     {
         private readonly IPenRepository _penRepository;
 
@@ -30,6 +30,22 @@ namespace Fountain.Domain.CommandHandlers
             };
 
             _penRepository.Add(pen);
+
+            return Task.FromResult(true);
+        }
+
+        Task<bool> IRequestHandler<UpdatePenCommand, bool>.Handle(UpdatePenCommand request, CancellationToken cancellationToken)
+        {
+            var pen = new Pen()
+            {
+                Id = request.Id,
+                Manufacturer = request.Manufacturer,
+                Model = request.Model,
+                Description = request.Description,
+                ImageUrl = request.ImageUrl
+            };
+
+            _penRepository.Update(pen);
 
             return Task.FromResult(true);
         }
