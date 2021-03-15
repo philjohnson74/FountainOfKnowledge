@@ -1,2 +1,2 @@
 # FountainOfKnowledge
-Website about fountain pens
+Website created using the Udemy DotNet Core Clean Architecture
